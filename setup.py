@@ -5,6 +5,10 @@ HYPHEN_E_DOT='-e .'
 # when i will run the requirements.txt file to install the packages
 # simultaneouly the setup.py should also run so that it builds the packages
 # -e . is just a token of connection to the setup.py file
+# it is a short form for editable 
+# it give live code updates
+# clean imports and single command setup
+
 
 # this specifies that my func will return a list with str
 def get_requirements(file_path:str)->List[str]:
