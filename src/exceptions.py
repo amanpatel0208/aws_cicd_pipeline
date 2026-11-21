@@ -1,7 +1,5 @@
 import sys
-import logging
-import os
-from datetime import datetime
+from src.logger import logging
 
 def error_message_details(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info()
@@ -34,4 +32,5 @@ class CustomException(Exception):
 #     try:
 #         a=1/0
 #     except Exception as e:
-#         logging.info('this is a logging info message about exception','divide by zero error')
+#         logging.info('this is a logging info message about exception divide by zero error')
+        # raise CustomException(e,sys)
